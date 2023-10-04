@@ -8,7 +8,7 @@ function Item({ name, category }) {
     updateCart((currentState) => !currentState)
   }
   return (
-    <li className="">
+    <li className={inCart ? "in-cart" : ""}>
       <span>{name}</span>
       <span className="category">{category}</span>
       <button onClick={handleAddToCart} className="add">{renderCartText}</button>

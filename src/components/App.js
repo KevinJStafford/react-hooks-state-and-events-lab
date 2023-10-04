@@ -8,7 +8,6 @@ function App() {
   const renderButtonText = state ? "Light Mode" : "Dark Mode"
 
   function handleButtonClick() {
-    console.log('clicked')
     setState((currentState) => !currentState)
   }
 
